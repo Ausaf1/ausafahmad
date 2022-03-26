@@ -27,7 +27,7 @@ function Projects() {
                             <div className="project__meta absolute">
                                 <h5 className="project__text">Portfolio</h5>
                                 <h4 className="project__text">Made my portfolio using react</h4>
-                                <a href="#" className="project__btn">View Details</a>
+                                <a href="https://github.com/Ausaf1/ausafahmad" className="project__btn">View Details</a>
                             </div>
                         </div>
                     </div>
