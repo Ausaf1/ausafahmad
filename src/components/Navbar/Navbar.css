@@ -1,0 +1,170 @@
+.Navbar {
+  padding: 30px 100px;
+  background-color: #2d2e32;
+  position: -webkit-sticky;
+  /* position: sticky;
+  top: 0;
+  z-index: 100;
+  height: 90px; */
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+}
+
+.logo {
+  display: flex;
+  font-size: 30px;
+  color: white;
+}
+
+.logo__span {
+  font-weight: 700;
+  margin-right: 10px;
+}
+
+.list {
+  list-style-type: none;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.links > a {
+  text-decoration: none;
+  color: white;
+}
+
+.links > a :hover {
+  color: #64f4ac;
+}
+
+.links {
+  margin-right: 25px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.links:hover {
+  color: #64f4ac;
+}
+
+.menuIcons {
+  filter: invert(1);
+  display: none;
+  position: absolute;
+  right: 20px;
+  top: 45px;
+}
+
+.menuIcons:hover {
+  opacity: 0, 8;
+  cursor: pointer;
+}
+
+.menu__icon {
+  width: 20px;
+}
+
+.navbar__socials {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar__linkedinDiv,
+.navbar__githubDiv {
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+  cursor: pointer;
+  color: white;
+}
+
+.navbar__linkedin,
+.navbar__github {
+  /* filter: invert(1); */
+  width: 20px;
+  margin-right: 10px;
+}
+
+.navbar__email {
+  background-color: #333438;
+  width: 21px;
+  margin-left: 50px;
+  cursor: pointer;
+  transition: 0.1s ease;
+}
+
+.navbar__email:hover {
+  background-color: #27282b;
+}
+
+@media screen and (max-width: 1024px) {
+  .Navbar {
+    padding: 30px 100px 30px 30px;
+  }
+
+  .list {
+    position: absolute;
+    left: 0;
+    top: 94px;
+    width: 100%;
+    flex-direction: column;
+    height: auto;
+    padding: 0;
+    background-color: #333438;
+    z-index: 100;
+  }
+  .links {
+    top: 0;
+    width: 100%;
+    border-top: 1px solid rgba(255, 255, 255, 0.555);
+    text-align: center;
+    margin-right: 0;
+    padding: 20px 0px;
+    opacity: 0.8;
+  }
+  .links:hover {
+    opacity: 1;
+  }
+  .menuIcons {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Navbar {
+    padding: 30px 50px;
+  }
+  .logo {
+    font-size: 25px;
+    margin-right: 50px;
+  }
+  .navbar__socials {
+    justify-content: unset;
+  }
+  .navbar__linkedinDiv,
+  .navbar__githubDiv {
+    display: none;
+  }
+  .navbar__linkedin,
+  .navbar__github {
+    margin-right: 30px;
+  }
+  .navbar__email {
+    margin-left: 0;
+  }
+  @media screen and (max-width: 450px) {
+    .Navbar {
+      padding: 30px 60px 30px 30px;
+    }
+    .logo {
+      margin-right: 15px;
+    }
+  }
+}
